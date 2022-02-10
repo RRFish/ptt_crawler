@@ -1,0 +1,25 @@
+<div>
+    <ul>
+        {{#each pttContent.meta}}
+            <li>{{this.tag}}:{{this.value}}</li>
+        {{/each}}
+    </ul>
+</div>
+<div>
+    <h2>文章</h2>
+    <p>{{pttContent.article}}</p>
+</div>
+<div>
+    <h2>留言</h2>
+    <ul>
+        {{#each pttContent.push}}
+            <li>
+                {{this.tag}}|{{this.pushContent}}|{{this.pushIpdatetime}}
+            </li>
+        {{/each}}    
+    </ul>
+
+</div>
+
+
+

@@ -1,0 +1,21 @@
+<table>
+    <thead>
+        <tr>
+            <th>title</th>
+            <th>author</th>
+            <th>date</th>
+            <th>link</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each pttIndex}}
+            <tr>
+                <td>{{this.title}}</td>
+                <td>{{this.author}}</td>
+                <td>{{this.date}}</td>
+                <td><a href="content?uuid={{this.uuid}}">觀看內文</a> </td>
+            </tr>
+        {{/each}}
+
+    </tbody>
+</table>
